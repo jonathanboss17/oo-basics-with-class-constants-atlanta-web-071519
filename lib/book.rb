@@ -1,7 +1,9 @@
-# constants written in all caps
+# constants written in all caps ...shared among all instances
 class Book
   attr_accessor :author, :page_count, :genre
   attr_reader :title
+  
+  GENRES = []
 
   def initialize(title)
     @title = title
